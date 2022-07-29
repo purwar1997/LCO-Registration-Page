@@ -56,7 +56,6 @@ body {
 
 .col-right nav a {
   display: block;
-  margin-bottom: -15px;
 }
 
 .col-right h1 {
@@ -122,5 +121,20 @@ body {
 
   .col-right {
     align-items: center;
+  }
+
+  .col-right input,
+  .col-right form button {
+    width: 420px;
+    display: block;
+    margin: 15px auto;
+  }
+
+  .col-right input[type="email"] {
+    width: 420px;
+  }
+
+  .col-right button {
+    width: 360px;
   }
 }
