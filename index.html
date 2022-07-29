@@ -6,31 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration | LCO</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styletwo.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="col col-left">
+    <main class="container">
+      <section class="col col-left">
+        <img src="./images/yellow-blob.png" alt="cover image" class="cover-image" />
         <img src="./images/mobile.png" alt="phone image" class="phone-image" />
-      </div>
+      </section>
 
-      <div class="col col-right">
+      <section class="col col-right">
         <h1>Create Account</h1>
 
-        <form action="" method="GET" class="registration-form">
+        <form action="#" method="POST" class="registration-form">
           <input type="text" name="first-name" placeholder="First Name" required />
           <input type="text" name="last-name" placeholder="Last Name" />
           <input type="email" name="email-id" placeholder="Enter your email" required />
-          <input type="password" name="password" placeholder="Password" required />
+          <input type="password" name="password" placeholder="Password" maxlength="12" required />
           <input
             type="password"
             name="confirmed-password"
             placeholder="Confirm Password"
+            maxlength="12"
             required
           />
           <button type="submit" class="create-account">Create Account</button>
         </form>
 
-        <span>OR</span>
+        <span class="divider">OR</span>
 
         <nav class="signup">
           <a href="https://www.facebook.com/" target="_blank"
@@ -41,7 +44,7 @@
           >
           <a href="http://github.com" target="_blank"><button class="github">GitHub</button></a>
         </nav>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>

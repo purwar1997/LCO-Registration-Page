@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #d2d7d8;
+  background-color: #d5d5d5;
   font-family: "Montserrat", "Verdana";
   color: #242b2e;
   height: 100vh;
@@ -24,16 +24,26 @@ body {
   height: 100vh;
 }
 
-.col-left {
+/* .col-left {
   background-image: url(../images/yellow-blob.png);
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: 85%;
+  background-size: 85%; 
+} */
+
+/* using z-index */
+.col-left .cover-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45%;
+  z-index: -1; /* this image will be stacked below the phone image and form */
 }
 
 .col-left .phone-image {
-  display: block;
-  margin: 12% auto;
+  position: absolute;
+  left: 15%;
+  top: 12%;
   height: 500px;
 }
 
@@ -46,7 +56,7 @@ body {
 
 .col-right h1,
 .col-right button,
-.col-right span {
+.col-right .divider {
   width: 570px;
 }
 
@@ -63,6 +73,7 @@ body {
   font-weight: 800;
   font-size: 40px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .col-right input,
@@ -82,6 +93,7 @@ body {
 .col-right button {
   color: #ffffff;
   font-size: 20px;
+  text-transform: capitalize;
   cursor: pointer;
   transition: box-shadow 100ms ease-in-out;
 }
@@ -103,38 +115,13 @@ body {
 }
 
 .github {
-  background-color: #171515;
+  background-color: #6cc644;
 }
 
-.col-right span {
+.col-right .divider {
   display: block;
   font-size: 20px;
   font-weight: 600;
   text-align: center;
   margin: 8px;
-}
-
-@media screen and (max-width: 1000px) {
-  .col-left {
-    display: none;
-  }
-
-  .col-right {
-    align-items: center;
-  }
-
-  .col-right input,
-  .col-right form button {
-    width: 420px;
-    display: block;
-    margin: 15px auto;
-  }
-
-  .col-right input[type="email"] {
-    width: 420px;
-  }
-
-  .col-right button {
-    width: 360px;
-  }
 }
