@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  background-color: #d2d7d8;
+  font-family: "Montserrat", "Verdana";
+  color: #242b2e;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  height: 100vh;
+}
+
+.col-left {
+  background-image: url(../images/yellow-blob.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 85%;
+}
+
+.col-left .phone-image {
+  display: block;
+  margin: 12% auto;
+  height: 500px;
+}
+
+.col-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.col-right h1,
+.col-right button,
+.col-right span {
+  width: 570px;
+}
+
+.col-right input[type="email"] {
+  width: 520px;
+}
+
+.col-right nav a {
+  display: block;
+  margin-bottom: -15px;
+}
+
+.col-right h1 {
+  margin-bottom: 22px;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+}
+
+.col-right input,
+.col-right button {
+  margin: 8px 6px;
+  padding: 12px 25px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+}
+
+.col-right input {
+  font-size: 18px;
+}
+
+.col-right button {
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: box-shadow 100ms ease-in-out;
+}
+
+.col-right button:hover {
+  box-shadow: 0px 0px 30px 30px #242b2e inset;
+}
+
+.create-account {
+  background-color: #ffa500;
+}
+
+.facebook {
+  background-color: #4267b2;
+}
+
+.twitter {
+  background-color: #00acee;
+}
+
+.github {
+  background-color: #171515;
+}
+
+.col-right span {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  .col-left {
+    display: none;
+  }
+
+  .col-right {
+    align-items: center;
+  }
+}
